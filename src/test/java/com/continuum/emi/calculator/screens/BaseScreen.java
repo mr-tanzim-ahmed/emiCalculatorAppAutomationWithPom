@@ -50,8 +50,4 @@ public class BaseScreen extends Screen{
         wait.until(ExpectedConditions.visibilityOf(getElement(locator)));
     }
 
-    @Override
-    public void getSelect(By locator) {
-
-    }
 }

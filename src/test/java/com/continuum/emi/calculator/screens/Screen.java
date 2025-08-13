@@ -29,8 +29,6 @@ public abstract class Screen {
 
     public abstract void setWait(By locator);
 
-    public abstract void getSelect(By locator);
-
     public <T extends BaseScreen> T goTo(Class<T> baseScreen) {
         try {
             return baseScreen.getDeclaredConstructor(AndroidDriver.class).newInstance(driver);
