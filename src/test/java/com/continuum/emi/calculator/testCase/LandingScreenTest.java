@@ -5,7 +5,7 @@ import com.continuum.emi.calculator.screens.LandingScreen;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LandingTest extends BaseTest {
+public class LandingScreenTest extends BaseTest {
     @Test
     public void appTitleTest() {
         LandingScreen landingScreen = screen.goTo(LandingScreen.class);
@@ -20,10 +20,10 @@ public class LandingTest extends BaseTest {
     }
 
     @Test
-    public void emiCalculatorButtonTest(){
+    public void emiCalculatorButtonTest() {
         EmiCalculatorScreen emiCalculatorScreen = screen.goTo(LandingScreen.class)
-                .tapEmiCalculator();
-        Assert.assertEquals(emiCalculatorScreen.emiCalculatorScreenTitle(),"Calculator");
+                .tapEmiCalculatorButton();
+        Assert.assertEquals(emiCalculatorScreen.emiCalculatorScreenTitle(), "Calculator");
     }
 
     @Test
