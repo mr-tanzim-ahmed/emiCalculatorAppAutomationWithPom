@@ -3,8 +3,10 @@
 - Version 2.0.9
 
 - Language: Java 
-- Automation: Appium, Selenium 
-- Testing: TestNG 
+- Automation Framework: Appium, Selenium 
+- Testing Framework: TestNG
+- Reporting Framework:Extent Reporting
+- Base64 decodingr library: Commons codec
 - Locator: Appium Inspector 
 - Device: Genymotion (VM)
 - Design Pattern: POM
@@ -16,13 +18,23 @@ src
     └── test
         ├── java
             └── com
-            │   └── bng
-            │       └── calculator
-            │           ├── BaseTest.java
-            │           ├── BasicOperationTest.java
-            │           ├── ExponentialOperationTest.java
-            │           ├── LogarithmicTest.java
-            │           └── TrigonometryOperationTest.java
+            │   └── continuum
+            │       └── emi
+            │           └── calculator
+            │               ├── screens
+            │                   ├── BaseScreen.java
+            │                   ├── CompareLoanScreen.java
+            │                   ├── EmiCalculatorScreen.java
+            │                   ├── EmiDetailScreen.java
+            │                   ├── LandingScreen.java
+            │                   └── Screen.java
+            │               ├── testCase
+            │                   ├── BaseTest.java
+            │                   ├── CompareLoanScreenTest.java
+            │                   ├── EmiCalculatorScreenTest.java
+            │                   └── LandingScreenTest.java
+            │               └── util
+            │                   └── AppiumUtil.java
         └── resources
             └── regressionSuites.xml
 </code></pre>
