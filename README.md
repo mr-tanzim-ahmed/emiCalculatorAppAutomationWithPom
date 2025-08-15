@@ -21,6 +21,10 @@ src
             │   └── continuum
             │       └── emi
             │           └── calculator
+            │               ├── report
+            │                   ├── ReportManager.java
+            │                   ├── ReportTestManager.java
+            │                   └── TestListener.java
             │               ├── screens
             │                   ├── BaseScreen.java
             │                   ├── CompareLoanScreen.java
@@ -32,6 +36,7 @@ src
             │                   ├── BaseTest.java
             │                   ├── CompareLoanScreenTest.java
             │                   ├── EmiCalculatorScreenTest.java
+            │                   ├── EmiDetailScreenTest.java
             │                   └── LandingScreenTest.java
             │               └── util
             │                   └── AppiumUtil.java
