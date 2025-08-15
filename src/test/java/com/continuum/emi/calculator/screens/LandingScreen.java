@@ -14,6 +14,7 @@ public class LandingScreen extends BaseScreen {
     }
 
     public boolean hasPolicyButton() {
+        setWait(By.id("policyBtn"));
         return getAppElements(By.id("policyBtn")).size() > 0;
     }
 
