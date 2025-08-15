@@ -19,13 +19,13 @@ public abstract class Screen {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME));
     }
 
-    public abstract WebElement getElement(By locator);
+    public abstract WebElement getAppElement(By locator);
 
-    public abstract List<WebElement> getElements(By locator);
+    public abstract List<WebElement> getAppElements(By locator);
 
-    public abstract void tapElement(By locator);
+    public abstract void tapAppElement(By locator);
 
-    public abstract String getElementText(By locator);
+    public abstract String getAppElementText(By locator);
 
     public abstract void setWait(By locator);
 

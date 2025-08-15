@@ -6,15 +6,18 @@ import org.openqa.selenium.By;
 public class EmiDetailScreen extends BaseScreen {
 
     public EmiDetailScreen(AndroidDriver driver) {
+
         super(driver);
     }
 
     public boolean isEmiDetailScreenDisplayed() {
-        return getElements(By.id("layoutDetailContainer")).size() > 0;
-    }
-    public boolean isEmiMonthlyListDisplayed(){
-        return getElements(By.id("detailListView")).size() > 0;
+        setWait(By.id("layoutDetailContainer"));
+        return getAppElements(By.id("layoutDetailContainer")).size() > 0;
     }
 
+    public boolean isEmiMonthlyListDisplayed() {
+        setWait(By.id("detailListView"));
+        return getAppElements(By.id("detailListView")).size() > 0;
+    }
 
 }
